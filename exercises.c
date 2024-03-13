@@ -12,7 +12,7 @@ y su tamaño, y devuelva el valor más grande del arreglo.
 int findMax(int arr[], int size) 
 {
   int mayor = arr[0];
-  for (int i = 1; i < size; i++)
+  for (int i = 1 ; i < size ; i++)
     {
       if (arr[i] > mayor)
       {
@@ -30,7 +30,7 @@ invierta el orden de sus elementos.
 void reverseArray(int arr[], int size) 
 {
   int temp;
-  for (int i = 0; i < size / 2; i++)
+  for (int i = 0 ; i < size / 2 ; i++)
     {
       temp = arr[i];
       arr[i] = arr[size - i - 1];
@@ -46,18 +46,18 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
 {
-  int *newArr = (int *)malloc(size * sizeof(int));
-  int count = 0;
+  int *arregloPar = (int *)malloc(size * sizeof(int));
+  int contador = 0;
   for (int i = 0; i < size; i++)
     {
       if (arr[i] % 2 == 0)
       {
-        newArr[count] = arr[i];
-        count++;
+        arregloPar[contador] = arr[i];
+        contador++;
       }
     }
-  *newSize = count;
-  return newArr;
+  *newSize = contador;
+  return arregloPar;
 }
 
 /*
