@@ -85,3 +85,9 @@ exercises.c:184:9: error: unused variable ‘ultimo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e4bcaf7
+Wed 13 Mar 2024 09:00:44 PM UTC: 
+ exercises.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+ tests:  0|0
+total_score: 70/70
+de0e389
